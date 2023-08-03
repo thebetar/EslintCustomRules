@@ -13,6 +13,7 @@
 	"extends": ["eslint:recommended"],
 	"rules": {
 		"local/uppercase-literal-constant": "error",
-		"local/method-naming": "error"
+		"local/method-naming": "error",
+		"local/class-naming": "error"
 	}
 }
