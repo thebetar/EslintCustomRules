@@ -5,7 +5,7 @@ module.exports = {
 			description: 'Constants are unchanging to better display this they should be uppercase',
 		},
 		messages: {
-			uppercase: 'Constants with a literal value should be uppercase',
+			uppercase: '\'{{ name }}\': Constants with a literal value should be uppercase',
 		},
 	},
 	create: context => ({
@@ -20,6 +20,9 @@ module.exports = {
 						if (declaration.id.name !== declaration.id.name.toUpperCase()) {
 							context.report({
 								node: declaration.id,
+								data: {
+									name: declaration.id.name,
+								},
 								messageId: 'uppercase',
 							});
 						}

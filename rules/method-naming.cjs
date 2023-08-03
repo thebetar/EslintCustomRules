@@ -5,8 +5,8 @@ module.exports = {
 			description: 'Methods naming must adhere to standards',
 		},
 		messages: {
-			snake_case: 'Methods should not be snake_case',
-			uppercase: 'Methods should not be UPPERCASE',
+			snake_case: '\'{{ name }}\': Method name should not be snake_case',
+			uppercase: '\'{{ name }}\': Method name should not be UPPERCASE',
 		},
 	},
 	create: context => ({
@@ -34,6 +34,9 @@ module.exports = {
 				if (node.id.name.includes('_')) {
 					context.report({
 						node: node.id,
+						data: {
+							name: node.id.name,
+						},
 						messageId: 'snake_case',
 					});
 				}
@@ -41,6 +44,9 @@ module.exports = {
 				if (node.id.name === node.id.name.toUpperCase()) {
 					context.report({
 						node: node.id,
+						data: {
+							name: node.id.name,
+						},
 						messageId: 'uppercase',
 					});
 				}
