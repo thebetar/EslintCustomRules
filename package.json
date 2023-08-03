@@ -1,0 +1,11 @@
+{
+	"name": "eslint-custom-rules",
+	"type": "module",
+	"scripts": {
+		"test": "mocha"
+	},
+	"devDependencies": {
+		"eslint": "^8.46.0",
+		"mocha": "^10.2.0"
+	}
+}
