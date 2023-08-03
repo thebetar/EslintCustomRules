@@ -2,9 +2,9 @@ import { RuleTester } from "eslint";
 import { uppercaseConstants } from "../rules/uppercase-contant.js";
 import { DEFAULT_CONFIG } from "../.eslintrc.js";
 
-const ruleTester = new RuleTester(DEFAULT_CONFIG);
+const RULE_TESTER = new RuleTester(DEFAULT_CONFIG);
 
-ruleTester.run("uppercase-constants", uppercaseConstants, {
+RULE_TESTER.run("uppercase-constants", uppercaseConstants, {
     valid: [
         {
             name: "Uppercase constant",
