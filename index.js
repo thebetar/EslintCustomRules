@@ -1,7 +1,7 @@
-import { uppercaseConstant } from "./rules/uppercase-contant.js";
+import { UPPERCASE_LITERAL_CONSTANT } from "./rules/uppercase-literal-constant";
+import { METHOD_NAMING } from "./rules/method-naming";
 
 export default {
-    rules: {
-        "uppercase-constant": uppercaseConstant
-    }
-}
+    'uppercase-literal-constant': UPPERCASE_LITERAL_CONSTANT,
+    'method-naming': METHOD_NAMING,
+};
