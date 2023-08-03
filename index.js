@@ -1,7 +1,7 @@
-import { uppercaseConstants } from "./rules/uppercase-contant.js";
+import { uppercaseConstant } from "./rules/uppercase-contant.js";
 
 export default {
     rules: {
-        "uppercase-constants": uppercaseConstants
+        "uppercase-constant": uppercaseConstant
     }
 }

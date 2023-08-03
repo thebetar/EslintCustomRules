@@ -1,11 +1,18 @@
 {
 	"name": "eslint-custom-rules",
 	"type": "module",
+	"exports": {
+		".": {
+			"import": "./index.js",
+			"require": "./index.cjs"
+		}
+	},
 	"scripts": {
 		"test": "mocha"
 	},
 	"devDependencies": {
 		"eslint": "^8.46.0",
-		"mocha": "^10.2.0"
+		"mocha": "^10.2.0",
+		"eslint-plugin-local": "file:./index.cjs"
 	}
 }

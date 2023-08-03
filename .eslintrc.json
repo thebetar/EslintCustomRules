@@ -1,0 +1,17 @@
+{
+	"env": {
+		"browser": true,
+		"es6": true,
+		"node": true
+	},
+	"plugins": ["local"],
+	"parserOptions": {
+		"ecmaVersion": "latest",
+		"requireConfigFile": false,
+		"sourceType": "module"
+	},
+	"extends": ["eslint:recommended"],
+	"rules": {
+		"local/uppercase-constant": "error"
+	}
+}

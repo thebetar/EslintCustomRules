@@ -1,4 +1,4 @@
-export const UPPERCASE_CONSTANT = {
+module.exports = {
     meta: {
         type: "Problem",
         docs: {
@@ -6,7 +6,7 @@ export const UPPERCASE_CONSTANT = {
         },
         messages: {
             uppercase: "Constants should be uppercase",
-        },
+        }
     },
     create: context => ({
         VariableDeclaration(node) {
@@ -24,4 +24,4 @@ export const UPPERCASE_CONSTANT = {
             }
         }
     })
-};
+}
