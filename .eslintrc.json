@@ -7,7 +7,6 @@
 	"plugins": ["local"],
 	"parserOptions": {
 		"ecmaVersion": "latest",
-		"requireConfigFile": false,
 		"sourceType": "module"
 	},
 	"extends": ["eslint:recommended"],
